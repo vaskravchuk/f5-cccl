@@ -146,7 +146,7 @@ class ApiPoolMember(PoolMember):
         An address is of the form:
         <ip_address>[%<route_domain_id>]
         """
-        if not address or not port:
+        if not address:
             LOGGER.error(
                 "pool member definition must contain address and port")
             raise TypeError(
